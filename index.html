@@ -254,11 +254,11 @@
         
             <section>
                 <div class="contact-form">
-                    <form action="">
-                        <input type="text" placeholder="Enter Your Name" required>
-                        <input type="email" placeholder="Enter Your Email" required>
-                        <input type="text" placeholder="Enter Your Subject">
-                        <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+                    <form action="send_email.php" method="POST">
+                        <input type="text" name="name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+                        <input type="text" name="subject" placeholder="Enter Your Subject">
+                        <textarea name="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
                         <input type="submit" value="Submit" class="send">
                         <p class="lastline">Got questions, ideas, or just want to say hi? We're all ears – send us a message!</p>
                     </form>
@@ -273,40 +273,6 @@
     
 
 
-        <script src="main.js"></script>
-        <script>
-            // Initialize Swiper
-            var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 1, // Number of images visible at once
-                spaceBetween: 10, // Space between images
-                loop: true, // Enable loop
-                autoplay: {
-                    delay: 2500, // Delay between transitions in milliseconds (e.g., 2500ms = 2.5 seconds)
-                    disableOnInteraction: false, // Keep autoplay running after user interaction (like slide swipe)
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true, // Enable clickable pagination
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next', // Next button
-                    prevEl: '.swiper-button-prev', // Previous button
-                },
-                breakpoints: {
-                    // When the screen width is 768px or larger, display 3 images
-                    768: {
-                        slidesPerView: 1,
-                    },
-                    // When the screen width is 1024px or larger, display 4 images
-                    1024: {
-                        slidesPerView: 1,
-                    },
-                    // For smaller screens, display 1 image per view
-                    480: {
-                        slidesPerView: 1,
-                    }
-                }
-            });
-        </script>
+        
      </body>
 </html>
